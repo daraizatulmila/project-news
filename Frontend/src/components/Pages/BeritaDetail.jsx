@@ -74,7 +74,7 @@ export default function BeritaDetail() {
           <div className="text-red-500 text-xl mb-4">{error}</div>
           <button
             onClick={fetchBeritaDetail}
-            className="bg-blue-300 text-white px-6 py-2 rounded-lg hover:bg-orange-600 transition-colors"
+            className="bg-blue-400 text-white px-6 py-2 rounded-lg hover:bg-blue-300 transition-colors"
           >
             Coba Lagi
           </button>
