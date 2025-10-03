@@ -19,7 +19,7 @@ export default function Sidebar({ activeMenu, setActiveMenu }) {
   return (
     <aside className="w-64 h-screen bg-white shadow-lg border-r border-gray-200 flex flex-col">
       <div className="p-6 border-b border-gray-200">
-        <h2 className="text-2xl font-bold text-orange-500 mb-1">Admin Panel</h2>
+        <h2 className="text-2xl font-bold text-blue-400 mb-1">Admin Panel</h2>
         <p className="text-sm text-gray-500">Dashboard Management</p>
       </div>
 
@@ -35,20 +35,20 @@ export default function Sidebar({ activeMenu, setActiveMenu }) {
               onClick={() => setActiveMenu(item.id)}
               className={`flex items-start gap-3 w-full p-3 rounded-xl text-left ${
                 isActive
-                  ? "bg-orange-500 text-white"
-                  : "text-gray-700 hover:bg-orange-50 hover:text-orange-600 border border-transparent hover:border-orange-200"
+                  ? "bg-blue-400 text-white"
+                  : "text-gray-700 hover:bg-blue-50 hover:text-blue-300 border border-transparent hover:border-orange-200"
               }`}
             >
               <Icon
                 className={`w-5 h-5 mt-0.5 flex-shrink-0 ${
-                  isActive ? "text-white" : "text-orange-500"
+                  isActive ? "text-white" : "text-blue-300"
                 }`}
               />
               <div className="flex-1">
                 <div className="font-medium text-sm">{item.label}</div>
                 <div
                   className={`text-xs mt-0.5 ${
-                    isActive ? "text-orange-100" : "text-gray-500"
+                    isActive ? "text-blue-300" : "text-gray-500"
                   }`}
                 >
                   {/* {item.description} */}
